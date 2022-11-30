@@ -9,6 +9,9 @@ html {
   display: flex;
   flex-direction: column;
 }
+.res_top{
+    display: none;
+}
 .header img {
   width: fit-content;
   z-index: -1;
@@ -434,44 +437,23 @@ html {
 
 @media only screen and (max-width: 400px) {
   /* first section */
-  #background_media {
-    /* background-image: url("Responsive_img/first/Group 770.svg"); */
-    display: flex;
-    background-color: rebeccapurple;
-    position: absolute;
-    width: 41.4rem;
-    height: 87.5rem;
-    left: 0rem;
-    top: 0rem;
-  }
-
-  #background {
-    display: none;
-  }
-  #logo {
-    display: none;
-  }
-  #box1_box {
-    display: none;
-  }
-  #side_box {
-    display: none;
-  }
-  #male_img {
-    display: none;
-  }
-  #female_img {
-    display: none;
-  }
-  #male_name {
-    display: none;
-  }
-  #female_name {
-    display: none;
-  }
-  #text {
-    display: none;
-  }
+  
+  .header{
+      display: none;
+    }
+    .res_top{
+        display: flex;
+    }
+    #res_back {
+      /* background-image: url("Responsive_img/first/Group 770.svg"); */
+      display: flex;
+      background-color: rebeccapurple;
+      position: absolute;
+      width: 41.4rem;
+      height: 87.5rem;
+      left: 0rem;
+      top: 0rem;
+    }
 
   /* second section */
 
@@ -489,10 +471,6 @@ html {
     left: -2.6rem;
     top: 97rem;
   }
-
-
-
-
 
   /* third section */
   #third_section {

@@ -1,434 +1,538 @@
-html{
-    font-size: 10px;
+html {
+  font-size: 10px;
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.header{
-    display: flex;
-    flex-direction: column;
+.header {
+  display: flex;
+  flex-direction: column;
 }
-.header img{
-    width: fit-content;
-    z-index: -1;
-    position: absolute;
+.header img {
+  width: fit-content;
+  z-index: -1;
+  position: absolute;
 }
-#logo{
-    position: absolute;
-    Width: 9rem;
-    Height: 8rem;
-    Top: 0rem;
-    Left: 2rem;
+#background_media {
+  display: none;
 }
-.box1{
-    position:absolute;
+#logo {
+  position: absolute;
+  width: 9rem;
+  height: 8rem;
+  top: 0rem;
+  left: 2rem;
 }
-
-#box1_box{
-    position: relative;
-    height: 45.429626rem;
-    width: 55.413269rem;
-    left: 77.840332rem;
-    top: 14.570313rem;
-    border-radius: 0px;
-}
-#side_box{
-    width: 32rem;
-    height: 44rem;
-    left: 112rem;
-    top: 33rem;
-    z-index: 3;
-}
-#male_img{
-    position: absolute;
-    width: 21.6rem;
-    height: 23rem;
-    left: 93rem;
-    top: 44rem;
-}
-#female_img{
-    position: absolute;
-    width: 22.6rem;
-    height: 44rem;
-    left: 68rem;
-    top: 34rem;
+.box1 {
+  position: absolute;
 }
 
-#text{
-    position: absolute;
-    width: 580px;
-    height: 231px;
-    left: 110px;
-    top: 199px;
-    display: flex;
-    /* background-color: green; */
+#box1_box {
+  position: relative;
+  height: 45.429626rem;
+  width: 55.413269rem;
+  left: 77.840332rem;
+  top: 14.570313rem;
+  border-radius: 0px;
 }
-#male_name{
-    position: absolute;
-    width: 26.3rem;
-    height: 4.5rem;
-    left: 97rem;
-    top: 70rem;
+#side_box {
+  width: 32rem;
+  height: 44rem;
+  left: 112rem;
+  top: 33rem;
+  z-index: 3;
 }
-#female_name{
-    position: absolute;
-    width: 19.3rem;
-    height: 4.5rem;
-    left: 72rem;
-    top: 69rem;
+#male_img {
+  position: absolute;
+  width: 21.6rem;
+  height: 23rem;
+  left: 93rem;
+  top: 44rem;
 }
-    
-#Second_Back{
-    position: absolute;
-    width: 126.0rem;
-    height: 60.2rem;
-    left: 11.0rem;
-    top: 96.0rem;
-    
-}
-#rings{
-    position: absolute;
-    width: 40.0rem;
-    height: 40.0rem;
-    left: -6.0rem;
-    top: 94.1rem;
-}
-.cards_container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-#card1{
-    position: absolute;
-    width: 30.0rem;
-    height: 40.0rem;
-    left: 11.0rem;
-    top: 110.0rem;
-    background: #FFFFFF;
-    box-shadow: 0.2rem 1.0rem 1.6rem rgba(101, 97, 125, 0.2);
-    border-radius: 1.0rem;
-}
-#image_car1{
-    position: absolute;
-width: 21.84rem;
-height: 15.0rem;
-left: 15.1rem;
-top: 133.0rem;
-
-}
-#image_text{
-    position: absolute;
-width: 22.1rem;
-height: 6.0rem;
-left: 13.0rem;
-top: 113.0rem;
-
-/* font-family: 'GT Walsheim Pro'; */
-font-style: normal;
-font-weight: 800;
-font-size: 2.5rem;
-line-height: 2.9rem;
-display: flex;
-align-items: center;
+#female_img {
+  position: absolute;
+  width: 22.6rem;
+  height: 44rem;
+  left: 68rem;
+  top: 34rem;
 }
 
-#Booknow1{
-    position: absolute;
-width: 8.8rem;
-height: 2.0rem;
-left: 13.0rem;
-top: 127.0rem;
-
-font-family: 'GT Walsheim Pro';
-font-style: normal;
-font-weight: 800;
-font-size: 1.8rem;
-line-height: 2.1rem;
-display: flex;
-align-items: center;
-
-color: #FA5959;
-
+#text {
+  position: absolute;
+  width: 580px;
+  height: 231px;
+  left: 110px;
+  top: 199px;
+  display: flex;
+  /* background-color: green; */
 }
-#card2{
-    position: absolute;
-    width: 30.0rem;
-    height: 40.0rem;
-    left: 44.0rem;
-    top: 110.0rem;
-    
-    background: #FFFFFF;
-    box-shadow: .2rem 1.0rem 1.6rem rgba(101, 97, 125, 0.2);
-    border-radius: 1.0rem;
+#male_name {
+  position: absolute;
+  width: 26.3rem;
+  height: 4.5rem;
+  left: 97rem;
+  top: 70rem;
 }
-#image_car2{
-    position: absolute;
-    width: 244.8.3rem;
-    height: 15.0rem;
-    left: 46.8rem;
-    top: 133.0rem;
-
-}
-#image_text2{
-    position: absolute;
-    width: 26.0rem;
-    height: 6.0rem;
-    left: 46.0rem;
-    top: 113.0rem;
-    
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2.5rem;
-    line-height: 2.9rem;
-    display: flex;
-    align-items: center;
-    
-    color: #444053;
+#female_name {
+  position: absolute;
+  width: 19.3rem;
+  height: 4.5rem;
+  left: 72rem;
+  top: 69rem;
 }
 
-#Booknow2{
-    position: absolute;
-    width: 8.8rem;
-    height: 2.0rem;
-    left: 46.0rem;
-    top: 127.0rem;
-    
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    display: flex;
-    align-items: center;
-    
-    color: #FA5959;
-
+#Second_Back {
+  position: absolute;
+  width: 126rem;
+  height: 60.2rem;
+  left: 11rem;
+  top: 96rem;
 }
-#card3{
-    position: absolute;
-    width: 30.0rem;
-    height: 40.0rem;
-    left: 77.0rem;
-    top: 110.0rem;
-    
-    background: #FFFFFF;
-    box-shadow: .2rem 1.0rem 1.6rem rgba(101, 97, 125, 0.2);
-    border-radius: 1.0rem;
+#sec_res_text {
+  display: none;
 }
-#image_car3{
-    position: absolute;
-    width: 20.66rem;
-    height: 15.0rem;
-    left: 81.7rem;
-    top: 133.0rem;
-    
-
+.second_respon {
+  display: none;
 }
-#image_text3{
-   
-position: absolute;
-width: 26.0rem;
-height: 6.0rem;
-left: 79.0rem;
-top: 113.0rem;
+#rings {
+  position: absolute;
+  width: 40rem;
+  height: 40rem;
+  left: -6rem;
+  top: 94.1rem;
+}
+.cards_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#card1 {
+  position: absolute;
+  width: 30rem;
+  height: 40rem;
+  left: 11rem;
+  top: 110rem;
+  background: #ffffff;
+  box-shadow: 0.2rem 1rem 1.6rem rgba(101, 97, 125, 0.2);
+  border-radius: 1rem;
+}
+#image_car1 {
+  position: absolute;
+  width: 21.84rem;
+  height: 15rem;
+  left: 15.1rem;
+  top: 133rem;
+}
+#image_text {
+  position: absolute;
+  width: 22.1rem;
+  height: 6rem;
+  left: 13rem;
+  top: 113rem;
 
-font-family: 'GT Walsheim Pro';
-font-style: normal;
-font-weight: 800;
-font-size: 2.5rem;
-line-height: 2.9rem;
-display: flex;
-align-items: center;
-
-color: #444053;
-
+  /* font-family: 'GT Walsheim Pro'; */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  display: flex;
+  align-items: center;
 }
 
-#Booknow3{
-    position: absolute;
-    width: 8.8rem;
-    height: 2.0rem;
-    left: 79.0rem;
-    top: 127.0rem;
-    
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    display: flex;
-    align-items: center;
-    
-    
-    color: #FA5959;
-   
-    
-    
-    
+#Booknow1 {
+  position: absolute;
+  width: 8.8rem;
+  height: 2rem;
+  left: 13rem;
+  top: 127rem;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+
+  color: #fa5959;
+}
+#card2 {
+  position: absolute;
+  width: 30rem;
+  height: 40rem;
+  left: 44rem;
+  top: 110rem;
+
+  background: #ffffff;
+  box-shadow: 0.2rem 1rem 1.6rem rgba(101, 97, 125, 0.2);
+  border-radius: 1rem;
+}
+#image_car2 {
+  position: absolute;
+  width: 244.8.3rem;
+  height: 15rem;
+  left: 46.8rem;
+  top: 133rem;
+}
+#image_text2 {
+  position: absolute;
+  width: 26rem;
+  height: 6rem;
+  left: 46rem;
+  top: 113rem;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  display: flex;
+  align-items: center;
+
+  color: #444053;
+}
+
+#Booknow2 {
+  position: absolute;
+  width: 8.8rem;
+  height: 2rem;
+  left: 46rem;
+  top: 127rem;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+
+  color: #fa5959;
+}
+#card3 {
+  position: absolute;
+  width: 30rem;
+  height: 40rem;
+  left: 77rem;
+  top: 110rem;
+
+  background: #ffffff;
+  box-shadow: 0.2rem 1rem 1.6rem rgba(101, 97, 125, 0.2);
+  border-radius: 1rem;
+}
+#image_car3 {
+  position: absolute;
+  width: 20.66rem;
+  height: 15rem;
+  left: 81.7rem;
+  top: 133rem;
+}
+#image_text3 {
+  position: absolute;
+  width: 26rem;
+  height: 6rem;
+  left: 79rem;
+  top: 113rem;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  display: flex;
+  align-items: center;
+
+  color: #444053;
+}
+
+#Booknow3 {
+  position: absolute;
+  width: 8.8rem;
+  height: 2rem;
+  left: 79rem;
+  top: 127rem;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+
+  color: #fa5959;
 }
 #Booknow3 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+#card4 {
+  position: absolute;
+  width: 30rem;
+  height: 40rem;
+  left: 110rem;
+  top: 110rem;
 
+  background: #ffffff;
+  box-shadow: 0.2rem 1rem 1.6rem rgba(101, 97, 125, 0.2);
+  border-radius: 1rem;
 }
-#card4{
-    position: absolute;
-    width: 30.0rem;
-    height: 40.0rem;
-    left: 110.0rem;
-    top: 110.0rem;
-    
-    background: #FFFFFF;
-    box-shadow: .2rem 1.0rem 1.6rem rgba(101, 97, 125, 0.2);
-    border-radius: 1.0rem;
+#image_car4 {
+  position: absolute;
+  width: 28.729rem;
+  height: 15rem;
+  left: 110.6rem;
+  top: 133rem;
 }
-#image_car4{
-    position: absolute;
-    width: 28.729rem;
-    height: 15.0rem;
-    left: 110.6rem;
-    top: 133.0rem;
+#card_text1 {
+  position: absolute;
+  width: 262px;
+  height: 60px;
+  left: 130px;
+  top: 1200px;
 
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: #444053;
 }
-#card_text1{
-    position: absolute;
-    width: 262px;
-    height: 60px;
-    left: 130px;
-    top: 1200px;
-    
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+#card_text2 {
+  position: absolute;
+  width: 260px;
+  height: 60px;
+  left: 460px;
+  top: 1200px;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: #444053;
+}
+#card_text3 {
+  position: absolute;
+  width: 263px;
+  height: 59px;
+  left: 790px;
+  top: 1201px;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: #444053;
+}
+#card_text4 {
+  position: absolute;
+  width: 260px;
+  height: 60px;
+  left: 1120px;
+  top: 1200px;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  color: #444053;
+}
+#image_text4 {
+  /* Learn Marketing */
+
+  position: absolute;
+  width: 26rem;
+  height: 6rem;
+  left: 112rem;
+  top: 113rem;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  display: flex;
+  align-items: center;
+
+  color: #444053;
+}
+#link {
+  text-decoration: none;
+  color: crimson;
+}
+
+#Booknow4 {
+  position: absolute;
+  width: 8.8rem;
+  height: 2rem;
+  left: 112rem;
+  top: 127rem;
+
+  font-family: "GT Walsheim Pro";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  display: flex;
+  align-items: center;
+  color: #fa5959;
+}
+
+.res_second {
+  display: none;
+}
+
+#third_section {
+  position: absolute;
+  width: 165.8rem;
+  height: 75.315rem;
+  left: -10.9rem;
+  top: 178rem;
+}
+#res_third {
+  display: none;
+}
+
+#fourth_section {
+  position: absolute;
+  width: 164.98rem;
+  height: 80.98rem;
+  left: -8rem;
+  top: 267.1rem;
+}
+#res_fourth {
+  display: none;
+}
+
+#fifth_section {
+  position: absolute;
+  width: 158.67rem;
+  height: 102.3rem;
+  left: -7.2rem;
+  top: 359rem;
+}
+#res_fifth {
+  display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  /* first section */
+  #background_media {
+    /* background-image: url("Responsive_img/first/Group 770.svg"); */
     display: flex;
-    align-items: center;
-    
-    color: #444053;
-}
-#card_text2{
+    background-color: rebeccapurple;
     position: absolute;
-    width: 260px;
-    height: 60px;
-    left: 460px;
-    top: 1200px;
-    
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    width: 41.4rem;
+    height: 87.5rem;
+    left: 0rem;
+    top: 0rem;
+  }
+
+  #background {
+    display: none;
+  }
+  #logo {
+    display: none;
+  }
+  #box1_box {
+    display: none;
+  }
+  #side_box {
+    display: none;
+  }
+  #male_img {
+    display: none;
+  }
+  #female_img {
+    display: none;
+  }
+  #male_name {
+    display: none;
+  }
+  #female_name {
+    display: none;
+  }
+  #text {
+    display: none;
+  }
+
+  /* second section */
+
+  .background_image {
+    display: none;
+  }
+
+  .res_second {
     display: flex;
-    align-items: center;
-    
-    color: #444053;
-}
-#card_text3{
+  }
+  #res_sec_img {
     position: absolute;
-    width: 263px;
-    height: 59px;
-    left: 790px;
-    top: 1201px;
-    
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    width: 53.6rem;
+    height: 57rem;
+    left: -2.6rem;
+    top: 97rem;
+  }
+
+
+
+
+
+  /* third section */
+  #third_section {
+    display: none;
+  }
+  #res_third {
     display: flex;
-    align-items: center;
-    
-    color: #444053;
-}
-#card_text4{
     position: absolute;
-width: 260px;
-height: 60px;
-left: 1120px;
-top: 1200px;
+    width: 53.3rem;
+    height: 68.9rem;
+    left: -5.9rem;
+    top: 165.1rem;
+  }
 
-font-family: 'GT Walsheim Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-display: flex;
-align-items: center;
-text-align: justify;
+  /* fourth */
 
-color: #444053;
-}
-#image_text4{
-   /* Learn Marketing */
-
-
-position: absolute;
-width: 26.0rem;
-height: 6.0rem;
-left: 112.0rem;
-top: 113.0rem;
-
-font-family: 'GT Walsheim Pro';
-font-style: normal;
-font-weight: 800;
-font-size: 2.5rem;
-line-height: 2.9rem;
-display: flex;
-align-items: center;
-
-color: #444053;
-
-}
-#link{
-    text-decoration: none;
-    color: crimson;
-}
-
-#Booknow4{
-    position: absolute;
-    width: 8.8rem;
-    height: 2.0rem;
-    left: 112.0rem;
-    top: 127.0rem;
-    
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
+  #fourth_section {
+    display: none;
+  }
+  #res_fourth {
     display: flex;
-    align-items: center;
-    color: #FA5959;
-}
-
-#embed{
-    width: inherit;
-    height: inherit;
-}
-#third_section{
     position: absolute;
-    width: 165.8rem;
-    height: 75.315rem;
-    left: -10.9rem;
-    top: 178.0rem;
+    width: 54.7rem;
+    height: 136.623rem;
+    left: -6.8rem;
+    top: 239.07rem;
+  }
 
-}
-#fourth_section{
-    position: absolute;
-    width: 164.98rem;
-    height: 80.98rem;
-    left: -8.0rem;
-    top: 267.1rem;
+  /* fifth */
 
-}
-#fifth_section{
+  #fifth_section {
+    display: none;
+  }
+
+  #res_fifth {
+    display: flex;
     position: absolute;
-    width: 158.67rem;
-    height: 102.3rem;
-    left: -7.2rem;
-    top: 359rem;
+    width: 55.7rem;
+    height: 71.153rem;
+    left: -7.8rem;
+    top: 384rem;
+  }
 }

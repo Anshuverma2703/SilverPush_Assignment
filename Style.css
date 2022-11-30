@@ -472,6 +472,24 @@ html {
     top: 97rem;
   }
 
+  #res_sec_button{
+    /* BOOK NOW */
+    position: absolute;
+    width: 9.2rem;
+    height: 2.4rem;
+    left: 14.1rem;
+    top: 125.2rem;
+    font-family: 'GT Walsheim Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    display: flex;
+    align-items: center;
+    color: #FA5959;
+    z-index: 5;
+  }
+
   /* third section */
   #third_section {
     display: none;
